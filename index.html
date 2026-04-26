@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title data-i18n="pageTitle">تانجيرو - احمد | Tanjiro Portfolio</title>
+  <meta name="description" content="Tanjiro - Ahmed. Founder of the Hollywood Discord Server." />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Cinzel:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Background grain + ambient orbs -->
+  <div class="grain"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <!-- Language Switcher -->
+  <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-toggle" id="langToggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+      <svg class="lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+      <span class="lang-current" id="langCurrent">العربية</span>
+      <svg class="lang-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <ul class="lang-menu" id="langMenu" role="menu">
+      <li><button type="button" data-lang="ar" class="lang-option" role="menuitem">العربية</button></li>
+      <li><button type="button" data-lang="en" class="lang-option" role="menuitem">English</button></li>
+      <li><button type="button" data-lang="tr" class="lang-option" role="menuitem">Türkçe</button></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <!-- Content -->
+      <div class="hero-content reveal">
+        <div class="top-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+          <span data-i18n="topBadge">مؤسس مجتمع هوليود</span>
+        </div>
+
+        <h1 class="hero-name">
+          <span data-i18n="nameFirst">تانجيرو</span><span class="dash">-</span><span data-i18n="nameLast">احمد</span>
+        </h1>
+
+        <h2 class="hero-headline">
+          <span class="line-1" data-i18n="headlineLead">أصنع مجتمعات</span>
+          <span class="line-2" data-i18n="headlineAccent">تجمع الناس على شاشة واحدة</span>
+        </h2>
+
+        <p class="hero-subtitle" data-i18n="subtitle">
+          ثمان سنوات من بناء التجارب الرقمية على ديسكورد. أحوّل الفكرة إلى مجتمع نابض بالحياة.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-value" data-i18n="stat1Value">+50K</div>
+            <div class="stat-label" data-i18n="stat1Label">عضو</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value" data-i18n="stat2Value">+8</div>
+            <div class="stat-label" data-i18n="stat2Label">سنوات</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value" data-i18n="stat3Value">24/7</div>
+            <div class="stat-label" data-i18n="stat3Label">نشاط</div>
+          </div>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-outline" data-i18n="aboutBtn">تعرف عليّ</a>
+        </div>
+      </div>
+
+      <!-- Portrait + floating badges + join button -->
+      <div class="hero-portrait-wrap reveal">
+        <div class="hero-portrait">
+          <div class="portrait-glow"></div>
+          <div class="portrait-blob">
+            <img src="images/ahmed.png" alt="Tanjiro - Ahmed" />
+            <div class="portrait-overlay"></div>
+          </div>
+          <div class="float-crown float-anim">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.964.734H5.817a1 1 0 0 1-.964-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>
+          </div>
+          <div class="float-badge badge-1 float-anim-1" dir="ltr">
+            <span class="badge-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12"/></svg></span>
+            <span>Discord</span>
+          </div>
+          <div class="float-badge badge-2 float-anim-2">
+            <span class="badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.964.734H5.817a1 1 0 0 1-.964-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg></span>
+            <span data-i18n="badgeHollywood">هوليود</span>
+          </div>
+          <div class="float-badge badge-3 float-anim-3">
+            <span class="badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <span data-i18n="badgeCommunity">مجتمع</span>
+          </div>
+        </div>
+
+        <a href="https://discord.gg/hly" target="_blank" rel="noreferrer" class="btn-join">
+          <span class="join-pulse"></span>
+          <svg class="join-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12"/></svg>
+          <span data-i18n="joinBtn">انضم لسيرفر هوليود</span>
+          <svg class="join-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>
+          <svg class="star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span data-i18n="aboutTitle">البطاقة التعريفية</span>
+          <svg class="star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-icon icon-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          </div>
+          <h3 data-i18n="nationalityTitle">الجنسية</h3>
+          <p data-i18n="nationalityValue">عراقي</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon icon-accent">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 data-i18n="locationTitle">الإقامة</h3>
+          <p data-i18n="locationValue">تركيا</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon icon-light">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+          </div>
+          <h3 data-i18n="ageTitle">العمر</h3>
+          <p data-i18n="ageValue">20 عاماً</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION -->
+  <section id="vision" class="section vision-section">
+    <div class="container vision-grid">
+      <div class="vision-text reveal">
+        <h2>
+          <span data-i18n="visionStart">رؤية تتجاوز مجرد</span>
+          <span class="highlight" data-i18n="visionHighlight">إدارة السيرفرات</span>
+        </h2>
+        <p data-i18n="visionDesc">الهدف لم يكن يوماً مجرد جمع الأرقام، بل صناعة مجتمع حقيقي يجمع أصحاب الشغف، ويوفر بيئة للترفيه الراقي والتواصل الهادف.</p>
+        <ul class="vision-points">
+          <li>
+            <span class="point-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+            </span>
+            <span data-i18n="visionPoint1">بيئة آمنة ومنظمة باحترافية</span>
+          </li>
+          <li>
+            <span class="point-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+            </span>
+            <span data-i18n="visionPoint2">فعاليات مستمرة ونشاط دائم</span>
+          </li>
+          <li>
+            <span class="point-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+            </span>
+            <span data-i18n="visionPoint3">دعم المواهب وتكريم المتميزين</span>
+          </li>
+        </ul>
+      </div>
+      <div class="vision-image reveal">
+        <div class="vision-image-glow vision-image-glow-cyan"></div>
+        <div class="vision-image-glow vision-image-glow-gold"></div>
+        <div class="vision-image-frame">
+          <div class="vision-image-inner">
+            <img src="images/hollywood-logo.jpg" alt="Hollywood Server" />
+            <div class="vision-image-vignette"></div>
+            <div class="vision-image-shine"></div>
+            <div class="vision-image-grain"></div>
+          </div>
+        </div>
+        <div class="vision-image-sparkle vision-image-sparkle-1"></div>
+        <div class="vision-image-sparkle vision-image-sparkle-2"></div>
+        <div class="vision-image-sparkle vision-image-sparkle-3"></div>
+        <div class="vision-image-sparkle vision-image-sparkle-4"></div>
+        <div class="vision-image-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.964.734H5.817a1 1 0 0 1-.964-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/></svg>
+          <span>HOLLYWOOD</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <h3 class="footer-logo">HOLLYWOOD</h3>
+      <a href="https://discord.gg/hly" target="_blank" rel="noreferrer" class="footer-social">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12"/></svg>
+      </a>
+      <p class="footer-copy">
+        <span data-i18n="nameFull">تانجيرو - احمد</span> &copy; <span id="year"></span> <span data-i18n="footerRights">جميع الحقوق محفوظة</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
